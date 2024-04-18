@@ -24,7 +24,7 @@
     <!-- hero -->
     <section id="hero" class="hero w-100 h-100 mx-auto text-center d-flex justify-content-center align-items-center text-white">
         <main>
-            <h4>Kepada Bapak/Ibu/Saudara/i, </h4>
+            <h4>Kepada <span>Bapak/Ibu/Saudara/i,</span> </h4>
             <h1>Sahrul & Greesell JKT48</h1>
             <p>Akan melakukan resepsi pernikahan dalam:</p>
             <div class="simply-countdown"></div>
@@ -103,6 +103,7 @@
                 <div class="col-md-8 col-10 text-center">
                     <h2>Informasi Acara</h2>
                     <p class="alamat">Alamat: Sudirman Grand Ballroom <br>Jl. Jend. Sudirman No.620, Dungus Cariang, Kec. Andir, Kota Bandung</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15843.162086792981!2d107.5777343!3d-6.9156305!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e608cfa0c18d%3A0xbe7da28b948823b!2sSudirman%20Grand%20Ballroom!5e0!3m2!1sid!2sid!4v1713443887586!5m2!1sid!2sid" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <a href="https://maps.app.goo.gl/eU4pD5s7SGmQhiXd7" target="_blank" class="btn btn-light btn-sm my-3">Klik untuk membuka peta</a>
                     <p class="description">Diharapkan untuk tidak salah alamat dan tujuan. Manakala tiba di tujuan namun tidak ada tanda-tanda sedang dilangsungkan pernikahan, bisa jadi Anda salah jadwal, atau salah tempat.</p>
                 </div>
@@ -271,6 +272,29 @@
                     <button class="btn btn-primary">Kirim</button>
                 </div>
             </form>
+            <div class="row justify-content-center mt-5">
+                <div class="col-md-6">
+                    <div id="disqus_thread"></div>
+                    <script>
+                        /**
+                        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                        
+                        var disqus_config = function () {
+                        this.page.url = 'https://sayajuli.github.io/';  // Replace PAGE_URL with your page's canonical URL variable
+                        // this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                        };
+                        
+                        (function() { // DON'T EDIT BELOW THIS LINE
+                        var d = document, s = d.createElement('script');
+                        s.src = 'https://rusell.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                        })();
+                    </script>
+                    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                </div>
+            </div>
         </div>
     </section>
     <!-- Gifts -->
@@ -342,6 +366,16 @@
             </div>
         </div>
     </footer>
+
+    <div id="audio-container">
+        <audio id="bgm" autoplay loop>
+            <source src="public/assets/audio/JKT48_Rapsodi_Lirik__puH3XQuaphs_140.mp3" type="audio/mp3">
+        </audio>
+
+        <div class="audio-icon-wrapper" style="display:none;">
+            <i class="bi bi-disc"></i>
+        </div>
+    </div>
     
     <script src="src/styles/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="src/components/bs5-lightbox/dist/index.bundle.min.js"></script>
@@ -350,5 +384,6 @@
     <script src="src/scripts/js/nav.js"></script>
     <script src="src/scripts/js/scroll.js"></script>
     <script src="src/scripts/js/form.js"></script>
+    <script src="src/scripts/js/getURL.js"></script>
 </body>
 </html>
