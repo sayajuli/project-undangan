@@ -61,11 +61,7 @@ body {
     backdrop-filter: blur(4px);
 }
 
-.mynav .offcanvas {
-    height: 100vh;
-}
-
-.mynav .navbar-brand, .mynav .offcanvas-title{
+.mynav .navbar-brand{
     font-family: "Dancing Script", cursive;
     font-size: 3.2rem;
     font-weight: bold;
@@ -75,11 +71,14 @@ body {
     text-transform: uppercase;
 }
 
+.mynav .nav-link:hover{
+    color: var(--pink);
+}
+
 .home {
     background-image: url(../../../public/assets/img/20240417_121108.png);
     background-size: cover;
     min-height: 100vh;
-    margin-top: -6rem;
     padding-top: 8rem;
     padding-bottom: 5rem;
 }
