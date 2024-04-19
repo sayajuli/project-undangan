@@ -23,7 +23,7 @@ function enableScroll(){
 }
 
 function playAudio() {
-    bgm.volume = 0.1;
+    bgm.volume = 0.4;
     audioIconWrapper.style.display = 'flex';
     bgm.play();
     isPlaying = true;
